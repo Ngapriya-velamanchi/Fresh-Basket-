@@ -44,6 +44,8 @@ html, body {
   z-index: 1000;
   flex-wrap: wrap; /* Allows responsive wrapping */
   gap: 10px;
+   overflow: auto;
+  max-height: 100vh;
 }
 
 
@@ -151,6 +153,10 @@ html, body {
     justify-content: center;
     align-items: stretch;
   }
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+  }
 
   .nav-links {
     flex-direction: column;
@@ -172,6 +178,14 @@ html, body {
     gap: 10px;
     text-align: center;
   }
+
+  .food-zone {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
 }
 
 
