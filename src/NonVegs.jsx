@@ -39,7 +39,7 @@ import { AddToCart } from './store';
 import Pagenation from './Pagenation';
 import { toast } from 'react-toastify';
 
-function NonVeg() {
+function NonVegs() {
   const Nonvegproducts = useSelector(globalstate => globalstate.product.Nonveg);
   let dispatch=useDispatch();
 
@@ -128,4 +128,4 @@ function NonVeg() {
     </>
   );
 }
-export default NonVeg;
+export default NonVegs;

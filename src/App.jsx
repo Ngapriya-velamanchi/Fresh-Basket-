@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import HomePages from './HomePages';
 import Veg from './Veg';
-import NonVeg from './nonVeg';
+
 import Orders from './Orders';
 import Cart from './Cart';
 import AboutUs from './AboutUs';
@@ -22,6 +22,7 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import Chocolates from './Chocolates';
 import Milk from './Milk';
+import NonVegs from './NonVegs';
 
 
 
@@ -105,7 +106,7 @@ function App() {
        <Route path="/" element={<HomePages/>} />
         
         <Route path="/Veg" element={<Veg />} />
-        <Route path="/NonVeg" element={<NonVeg />} />
+        <Route path="/NonVeg" element={<NonVegs />} />
         <Route path="/Milk" element={<Milk/>} />
         <Route path="/Chocolates" element={<Chocolates/>} />
         <Route path="/Orders" element={<Orders />} />
