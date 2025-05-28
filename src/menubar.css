@@ -1,0 +1,184 @@
+
+/* menubar.css */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+/* Ensure the app container stacks navbar and main content vertically */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows to fill remaining space */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f5f9fc; /* subtle background */
+  overflow-y: auto;
+}
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100vw; /* Ensures full screen width */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap; /* Allows responsive wrapping */
+  gap: 10px;
+}
+
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  flex: 1 1 0; /* Flexible width */
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Navbar links */
+.navbar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Hover effect for Navbar links */
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Icon styling */
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Cart icon styling */
+.cart-icon {
+  background-color: white !important;
+  padding: 6px;
+  animation: dance 1.8s infinite ease-in-out;
+}
+
+/* Auth section */
+.auth-section {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-width: fit-content;
+  max-width: 100%;
+}
+
+/* Auth section text styling */
+.auth-section span {
+  color: white;
+  font-weight: 600;
+}
+
+/* Button styling for auth */
+.auth-section button {
+  background-color: #ffffff;
+  color: #764ba2;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.auth-section button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Non-Veg image or any image in navbar */
+.navbar img {
+  width: auto;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .navbar a {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .auth-section {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
