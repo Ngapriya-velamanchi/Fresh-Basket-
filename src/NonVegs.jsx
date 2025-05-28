@@ -34,7 +34,7 @@ function NonVeg() {
 export default NonVeg;*/
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './NonVeg.css'; // 👈 Import the CSS
+import './NonVegs.css'; // 👈 Import the CSS
 import { AddToCart } from './store';
 import Pagenation from './Pagenation';
 import { toast } from 'react-toastify';
